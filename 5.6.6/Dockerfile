@@ -4,9 +4,9 @@ ENV SONAR_VERSION=5.6.6 \
     SONARQUBE_HOME=/opt/sonarqube \
     # Database configuration
     # Defaults to using H2
-    SONARQUBE_JDBC_USERNAME=sonar \
-    SONARQUBE_JDBC_PASSWORD=sonar \
-    SONARQUBE_JDBC_URL=
+    SONARQUBE_JDBC_USERNAME=sonarqube \
+    SONARQUBE_JDBC_PASSWORD=password \
+    SONARQUBE_JDBC_URL=jdbc:mysql://cdcadopdb.cbr7engfi77q.ap-southeast-2.rds.amazonaws.com:3306/sonarqube?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true&useConfigs=maxPerformance&useSSL=false
 
 # Http port
 EXPOSE 9000
